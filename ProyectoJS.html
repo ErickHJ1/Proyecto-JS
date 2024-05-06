@@ -8,6 +8,8 @@
 <body>
 
     <script src="/Proyecto.js"></script>
+<section class="calculaduraDePropina">
+    <div class="Todo">
 
     Cuenta ($) <br>
     <input id="cuenta" type="text" placeholder="cuenta">
@@ -19,12 +21,31 @@
     <input id="personas" type="text" placeholder="personas">
     <br><button type="button" id="boton" onclick="calcularPropina()">CALCULAR</button> 
 
+</div>
+
     <div>Total de propina:</div> <span>$</span> <span id="r1"></span><br><br>
-<div>Propina por personas:</div> <span>$</span> <span id="r2"></span> <br><br>
+    <div>Propina por personas:</div> <span>$</span> <span id="r2"></span> <br><br>
 <b><span id="r3"></span></b>
 
+</section>
 
-
+<table class="calculadora">
+    <tr>
+      <td colspan="4"><span id="resultado"></span></td>
+    </tr>
+    <tr>
+      <td><button id="siete">7</button></td><td><button id="ocho">8</button></td><td><button id="nueve">9</button></td><td><button id="division">/</button></td>
+    </tr>
+    <tr>
+      <td><button id="cuatro">4</button></td><td><button id="cinco">5</button></td><td><button id="seis">6</button></td><td><button id="multiplicacion">*</button></td>
+    </tr>
+    <tr>
+      <td><button id="uno">1</button></td><td><button id="dos">2</button></td><td><button id="tres">3</button></td><td><button id="resta">-</button></td>
+    </tr>
+    <tr>
+      <td><button id="igual">=</button></td><td><button id="reset">C</button></td><td><button id="cero">0</button></td><td><button id="suma">+</button></td>
+    </tr>
+</table>
 
 
 
