@@ -4,50 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<script src="/Proyecto.js"></script>
+    <link rel="stylesheet" href="/ProyectoJS.css">
 </head>
 <body>
-
-    <script src="/Proyecto.js"></script>
-<section class="calculaduraDePropina">
-    <div class="Todo">
-
-    Cuenta ($) <br>
-    <input id="cuenta" type="text" placeholder="cuenta">
-    
-    <br>Porcentaje de propina <br>
-
-    <input id="propina" type="text" placeholder="porcentaje de propina">
-    <br>  Distribucion de propina <br>
-    <input id="personas" type="text" placeholder="personas">
-    <br><button type="button" id="boton" onclick="calcularPropina()">CALCULAR</button> 
-
-</div>
-
-    <div>Total de propina:</div> <span>$</span> <span id="r1"></span><br><br>
-    <div>Propina por personas:</div> <span>$</span> <span id="r2"></span> <br><br>
-<b><span id="r3"></span></b>
-
-</section>
-
-<table class="calculadora">
-    <tr>
-      <td colspan="4"><span id="resultado"></span></td>
-    </tr>
-    <tr>
-      <td><button id="siete">7</button></td><td><button id="ocho">8</button></td><td><button id="nueve">9</button></td><td><button id="division">/</button></td>
-    </tr>
-    <tr>
-      <td><button id="cuatro">4</button></td><td><button id="cinco">5</button></td><td><button id="seis">6</button></td><td><button id="multiplicacion">*</button></td>
-    </tr>
-    <tr>
-      <td><button id="uno">1</button></td><td><button id="dos">2</button></td><td><button id="tres">3</button></td><td><button id="resta">-</button></td>
-    </tr>
-    <tr>
-      <td><button id="igual">=</button></td><td><button id="reset">C</button></td><td><button id="cero">0</button></td><td><button id="suma">+</button></td>
-    </tr>
-</table>
-
-
-
+    <div id="calculator">
+        <div id="screen">0</div>
+        
+        <button onclick="appendToScreen('7')">7</button>
+        <button onclick="appendToScreen('8')">8</button>
+        <button onclick="appendToScreen('9')">9</button>
+        <button onclick="appendToScreen('+')">+</button>
+        <br>
+        <button onclick="appendToScreen('4')">4</button>
+        <button onclick="appendToScreen('5')">5</button>
+        <button onclick="appendToScreen('6')">6</button>
+        <button onclick="appendToScreen('-')">-</button>
+        <br>
+        <button onclick="appendToScreen('1')">1</button>
+        <button onclick="appendToScreen('2')">2</button>
+        <button onclick="appendToScreen('3')">3</button>
+        <button onclick="appendToScreen('*')">*</button>
+        <br>
+        <button onclick="appendToScreen('0')">0</button>
+        <button onclick="clearScreen()">C</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="appendToScreen('/')">/</button>
+      </div>
 </body>
 </html>
