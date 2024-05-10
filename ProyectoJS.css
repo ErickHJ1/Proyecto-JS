@@ -2,7 +2,7 @@
   width:480px;
   height:auto;
   padding:10px 0;
-  margin: auto;
+  margin-top: 240px;
   background:#232323;
   border:#000 1px solid;
   border-radius:7px;
@@ -10,6 +10,7 @@
   -moz-border-radius:7px;
   overflow: hidden;
   text-align: center;
+  z-index: 10;
 }
 
 #screen {
@@ -23,7 +24,7 @@
   font-size: 3em;
   letter-spacing: 3px;
   overflow:hidden;
-  border:#000 1px solid;
+  border:#ccbcbc 1px solid;
   border-radius:7px;
   -webkit-border-radius:7px;
   -moz-border-radius:7px;
@@ -89,3 +90,9 @@ button {
   cursor: pointer;
 }
 
+body {
+
+  background-size: 110%;
+  background-position: center;
+  background-attachment: fixed;ck
+}

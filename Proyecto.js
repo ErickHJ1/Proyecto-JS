@@ -1,5 +1,7 @@
 let currentExpression = '';
 
+
+
 function appendToScreen(value) {
     currentExpression += value;
     document.getElementById('screen').textContent = currentExpression;
