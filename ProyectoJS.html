@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<script src="/Proyecto.js"></script>
+    <link rel="stylesheet" href="/ProyectoJS.css">
 </head>
 <body>
-    <input class="cuenta" type="number">
-    <input class="propina" type="number">
+    
+    <div id="calculator">
+        <div id="screen">0</div>
+        <button onclick="appendToScreen('7')">7</button>
+        <button onclick="appendToScreen('8')">8</button>
+        <button onclick="appendToScreen('9')">9</button>
+        <button onclick="appendToScreen('+')">+</button>
+        <br>
+        <button onclick="appendToScreen('4')">4</button>
+        <button onclick="appendToScreen('5')">5</button>
+        <button onclick="appendToScreen('6')">6</button>
+        <button onclick="appendToScreen('-')">-</button>
+        <br>
+        <button onclick="appendToScreen('1')">1</button>
+        <button onclick="appendToScreen('2')">2</button>
+        <button onclick="appendToScreen('3')">3</button>
+        <button onclick="appendToScreen('*')">*</button>
+        <br>
+        <button onclick="appendToScreen('0')">0</button>
+        <button onclick="clearScreen()">C</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="appendToScreen('/')">/</button>
+      </div>
+    
+        <video controls autoplay="true" width="1900px" style=" position: fixed; margin-left: -50px; margin-top: -750px; z-index:-1000;"> 
+            <source src="/styles/Robin Trailer — Sway to My Beat _ Honkai_ Star Rail.mp4"> 
+        </video>
 </body>
 </html>
