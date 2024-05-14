@@ -22,3 +22,5 @@ function calculateResult() {
     }
 }
 
+let resultados = localStorage.setItem("resulta", calculateResult)
+localStorage.getItem(calculateResult)
